@@ -1,0 +1,511 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Product Page</title>
+
+    <!-- Bootstrap -->
+   <!-- Bootstrap -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />  
+	  	<link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		 <link href='https://fonts.googleapis.com/css?family=Varela' rel='stylesheet'>
+		 <link rel='stylesheet' href='product.css' />
+	      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" font color="red" href="http://gaadiexpert.com/">NexT25</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+      
+      <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-collapse -->
+  </nav>
+  <div class="ad-sektion-top margin-t-40">
+ <div class="container-fluid text-center">
+	<div class="row">
+	    <div class="adbox-img ">
+	         <img src="https://moatsearch-data.s3.amazonaws.com/creative_screens/7b/f8/d4/7bf8d4dd35362e8a11a418d4c58bd59c.jpg" class="img-thumbnail" alt="Cinque Terre"> 
+	   </div>
+		
+		
+	</div>
+ </div>
+</div>
+<div class="container breadcrumb-sektion ">
+  <ol class="breadcrumb">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Private</a></li>
+    <li><a href="#">Pictures</a></li>
+    <li class="active">Vacation</li>        
+  </ol>
+</div>
+
+<div class="listingview-sidebar-sektion">
+    <div class="container">
+    <div class="col-md-3 sidebar">
+     <ul class="list-group">
+                 <li class="list-group-item active"> <span class="badge">5</span><a href="user-dashboard.html"><i class="glyphicon glyphicon-play"></i>Dashboard</a></li>
+                 <li class="list-group-item"> <span class="badge">5</span> <a href="user-dashboard-saved-searches.html"><i class="glyphicon glyphicon-play"></i> Saved Searches</a></li>
+                 <li class="list-group-item"> <span class="badge">12</span> <a href="user-dashboard-saved-cars.html"><i class="glyphicon glyphicon-play"></i> Saved Cars</a></li>
+                 <li class="list-group-item"> <a href="add-listing-form.html"><i class="glyphicon glyphicon-play"></i> Create new Ad</a></li>
+                 <li class="list-group-item"> <span class="badge">2</span> <a href="user-dashboard-manage-ads.html"><i class="glyphicon glyphicon-play"></i> Manage Ads</a></li>
+                 <li class="list-group-item"> <a href="user-dashboard-profile.html"><i class="glyphicon glyphicon-play"></i> My Profile</a></li>
+                 <li class="list-group-item"> <a href="user-dashboard-settings.html"><i class="glyphicon glyphicon-play"></i> Account Settings</a></li>
+                 <li class="list-group-item"> <a href="#"><i class="glyphicon glyphicon-play"></i> Log Out</a></li>
+                                </ul>
+    </div>
+    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 content"> 
+		<div class="content-area ">
+		  <div class="top-filter tfilter-box margin-b-20">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+              <div class="row">
+                <div class="col-md-12">
+                  <input class="form-control" placeholder="Search Deals & Coupons" type="text">
+                </div>
+              </div>
+            </div>
+            <!-- /.col 4 -->
+            <div class="col-sm-3">
+              <select class="form-control">
+                <option value="0" selected="selected">
+                  Select your categories
+                </option>
+                <option value="1">
+                  All
+                </option>
+                <option value="2">
+                  Travel
+                </option>
+                <option value="3">
+                  Beauty & Spas
+                </option>
+                <option value="4">
+                  Career & skills
+                </option>
+                <option value="5">
+                  Food & Drinks
+                </option>
+                <option value="6">
+                  Health & Beauty
+                </option>
+              </select>
+            </div>
+  
+            
+            <div class="col-sm-2">
+              <button type="button" class="btn btn-primary site-btn2">Submit</button>
+            </div>
+            <!-- /.col 1 -->
+        </div>
+    </div>
+</div>
+		    
+    	<!-- BEGIN PRODUCTS -->
+  		<div class="col-md-6 col-sm-6">
+    		<span class="thumbnail">
+      			<img src="https://images.pexels.com/photos/141198/pexels-photo-141198.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="...">
+      			<h4>Sumitra Kulkarni Moving & Packaging  Services</h4>
+      			<div class="ratings">
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                </div>
+      			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+      			<hr class="line">
+      			<div class="row">
+      				<div class="col-md-6 col-sm-6">
+      					<p class="price">$29,90</p>
+      				</div>
+      				<div class="col-md-6 col-sm-6">
+      					<button type="button" class="btn-sm btn-primary site-btn3">Book Now</button>
+      				</div>
+      				
+      			</div>
+    		</span>
+  		</div>
+  		<div class="col-md-6 col-sm-6">
+    		<span class="thumbnail">
+      			<img src="https://images.pexels.com/photos/141198/pexels-photo-141198.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="...">
+      			<h4>Sumitra Kulkarni Moving & Packaging  Services</h4>
+      			<div class="ratings">
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                </div>
+      			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+      			<hr class="line">
+      			<div class="row">
+      				<div class="col-md-6 col-sm-6">
+      					<p class="price">$29,90</p>
+      				</div>
+      				<div class="col-md-6 col-sm-6">
+      					<button type="button" class="btn-sm btn-primary site-btn3">Book Now</button>
+      				</div>
+      				
+      			</div>
+    		</span>
+  		</div>
+  		<div class="col-md-6 col-sm-6">
+    		<span class="thumbnail">
+      			<img src="https://images.pexels.com/photos/141198/pexels-photo-141198.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="...">
+      			<h4>Sumitra Kulkarni Moving & Packaging  Services</h4>
+      			<div class="ratings">
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                </div>
+      			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+      			<hr class="line">
+      			<div class="row">
+      				<div class="col-md-6 col-sm-6">
+      					<p class="price">$29,90</p>
+      				</div>
+      				<div class="col-md-6 col-sm-6">
+      					<button type="button" class="btn-sm btn-primary site-btn3">Book Now</button>
+      				</div>
+      				
+      			</div>
+    		</span>
+  		</div>
+  		<div class="col-md-6 col-sm-6">
+    		<span class="thumbnail">
+      			<img src="https://images.pexels.com/photos/141198/pexels-photo-141198.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="...">
+      			<h4>Sumitra Kulkarni Moving & Packaging  Services</h4>
+      			<div class="ratings">
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                </div>
+      			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+      			<hr class="line">
+      			<div class="row">
+      				<div class="col-md-6 col-sm-6">
+      					<p class="price">$29,90</p>
+      				</div>
+      				<div class="col-md-6 col-sm-6">
+      					<button type="button" class="btn-sm btn-primary site-btn3">Book Now</button>
+      				</div>
+      				
+      			</div>
+    		</span>
+  		</div>
+  		<div class="col-md-6 col-sm-6">
+    		<span class="thumbnail">
+      			<img src="https://images.pexels.com/photos/141198/pexels-photo-141198.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="...">
+      			<h4>Sumitra Kulkarni Moving & Packaging  Services</h4>
+      			<div class="ratings">
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                </div>
+      			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+      			<hr class="line">
+      			<div class="row">
+      				<div class="col-md-6 col-sm-6">
+      					<p class="price">$29,90</p>
+      				</div>
+      				<div class="col-md-6 col-sm-6">
+      					<button type="button" class="btn-sm btn-primary site-btn3">Book Now</button>
+      				</div>
+      				
+      			</div>
+    		</span>
+  		</div>
+  		<div class="col-md-6 col-sm-6">
+    		<span class="thumbnail">
+      			<img src="https://images.pexels.com/photos/141198/pexels-photo-141198.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="...">
+      			<h4>Sumitra Kulkarni Moving & Packaging  Services</h4>
+      			<div class="ratings">
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                </div>
+      			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+      			<hr class="line">
+      			<div class="row">
+      				<div class="col-md-6 col-sm-6">
+      					<p class="price">$29,90</p>
+      				</div>
+      				<div class="col-md-6 col-sm-6">
+      					<button type="button" class="btn-sm btn-primary site-btn3">Book Now</button>
+      				</div>
+      				
+      			</div>
+    		</span>
+  		</div>
+  		<div class="col-md-6 col-sm-6">
+    		<span class="thumbnail">
+      			<img src="https://images.pexels.com/photos/141198/pexels-photo-141198.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="...">
+      			<h4>Sumitra Kulkarni Moving & Packaging  Services</h4>
+      			<div class="ratings">
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                </div>
+      			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+      			<hr class="line">
+      			<div class="row">
+      				<div class="col-md-6 col-sm-6">
+      					<p class="price">$29,90</p>
+      				</div>
+      				<div class="col-md-6 col-sm-6">
+      					<button type="button" class="btn-sm btn-primary site-btn3">Book Now</button>
+      				</div>
+      				
+      			</div>
+    		</span>
+  		</div>
+  		<div class="col-md-6 col-sm-6">
+    		<span class="thumbnail">
+      			<img src="https://images.pexels.com/photos/141198/pexels-photo-141198.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="...">
+      			<h4>Sumitra Kulkarni Moving & Packaging  Services</h4>
+      			<div class="ratings">
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                </div>
+      			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+      			<hr class="line">
+      			<div class="row">
+      				<div class="col-md-6 col-sm-6">
+      					<p class="price">$29,90</p>
+      				</div>
+      				<div class="col-md-6 col-sm-6">
+      					<button type="button" class="btn-sm btn-primary site-btn3">Book Now</button>
+      				</div>
+      				
+      			</div>
+    		</span>
+  		</div>
+  		<div class="col-md-6 col-sm-6">
+    		<span class="thumbnail">
+      			<img src="https://images.pexels.com/photos/141198/pexels-photo-141198.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="...">
+      			<h4>Sumitra Kulkarni Moving & Packaging  Services</h4>
+      			<div class="ratings">
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                </div>
+      			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+      			<hr class="line">
+      			<div class="row">
+      				<div class="col-md-6 col-sm-6">
+      					<p class="price">$29,90</p>
+      				</div>
+      				<div class="col-md-6 col-sm-6">
+      					<button type="button" class="btn-sm btn-primary site-btn3">Book Now</button>
+      				</div>
+      				
+      			</div>
+    		</span>
+  		</div>
+  		<div class="col-md-6 col-sm-6">
+    		<span class="thumbnail">
+      			<img src="https://images.pexels.com/photos/141198/pexels-photo-141198.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="...">
+      			<h4>Sumitra Kulkarni Moving & Packaging  Services</h4>
+      			<div class="ratings">
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                </div>
+      			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+      			<hr class="line">
+      			<div class="row">
+      				<div class="col-md-6 col-sm-6">
+      					<p class="price">$29,90</p>
+      				</div>
+      				<div class="col-md-6 col-sm-6">
+      					<button type="button" class="btn-sm btn-primary site-btn3">Book Now</button>
+      				</div>
+      				
+      			</div>
+    		</span>
+  		</div>
+  		
+  		<ul class="pagination">
+					<li class="page-item"><a class="page-link" href="#">Previous</a></li>
+					<li class="page-item"><a class="page-link" href="#">1</a></li>
+					<li class="page-item"><a class="page-link" href="#">2</a></li>
+					<li class="page-item"><a class="page-link" href="#">3</a></li>
+					<li class="page-item"><a class="page-link" href="#">4</a></li>
+					<li class="page-item"><a class="page-link" href="#">5</a></li>
+					<li class="page-item"><a class="page-link" href="#">6</a></li>
+					<li class="page-item"><a class="page-link" href="#">7</a></li>
+					<li class="page-item"><a class="page-link" href="#">8</a></li>
+					<li class="page-item"><a class="page-link" href="#">9</a></li>
+					<li class="page-item"><a class="page-link" href="#">Next</a></li>
+				  </ul>
+
+  		
+  		<!-- END PRODUCTS -->
+	</div>
+		       
+           
+            
+                
+        </div>
+</div>
+</div>
+
+
+
+<div class="footer-section">
+    <div class="footer-top">
+    <div class="container">
+	<div class="row text-center">
+		<div class="col-md-12">
+		    <h2>Learn almost anything  </h2>
+		</div>
+		<div class="col-md-12">
+		    <p>Stay in the loop on all upcoming promotions, discounts and latest updates </p>
+		    <button type="button" class="btn btn-primary site-btn1">Primary</button>
+		    </div>
+	</div>
+</div>
+</div>
+    <div class="footer">
+	<div class="container">
+		<div class="col-md-3 footer-one">
+			<h5>About Us </h5>
+		    <p>Cras sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+		</div>
+		<div class="col-md-3 footer-two">
+		    <h5>Information </h5>
+		    <ul>
+									<li><a href="maintenance.html">Maintenance Tips</a></li>
+									<li><a href="contact.html">Locations</a></li>
+									<li><a href="about.html">Testimonials</a></li>
+									<li><a href="about.html">Careers</a></li>
+									<li><a href="about.html">Partners</a></li>
+								</ul>
+		</div>
+			<div class="col-md-3 footer-three">
+		    <h5>Information </h5>
+		    <ul>
+									<li><a href="maintenance.html">Maintenance Tips</a></li>
+									<li><a href="contact.html">Locations</a></li>
+									<li><a href="about.html">Testimonials</a></li>
+									<li><a href="about.html">Careers</a></li>
+									<li><a href="about.html">Partners</a></li>
+								</ul>
+		</div>
+			<div class="col-md-3 footer-four">
+		    <h5>Information </h5>
+		    <ul>
+									<li><a href="maintenance.html">Maintenance Tips</a></li>
+									<li><a href="contact.html">Locations</a></li>
+									<li><a href="about.html">Testimonials</a></li>
+									<li><a href="about.html">Careers</a></li>
+									<li><a href="about.html">Partners</a></li>
+								</ul>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+    <div class="footer-bottom">
+<div class="container">
+					<div class="row">
+						<div class="col-sm-6 ">
+							<div class="copyright-text">
+								<p>CopyRight © 2017 Digital All Rights Reserved</p>
+							</div>
+						</div> <!-- End Col -->
+						<div class="col-sm-6 ">
+						    	<div class="bigpixi-footer-social pull-right">
+      <ul>
+          <li class="bigpixi-footer-social__list-item">
+            <a class="bigpixi-footer__icon-link" rel="nofollow" href="https://twitter.com/">
+              <img class="bigpixi-footer-social__icon" alt="Twitter" title="Twitter" src="http://simpleicons.org/icons/twitter.svg">
+</a>          </li>
+          <li class="bigpixi-footer-social__list-item">
+            <a class="bigpixi-footer__icon-link" rel="nofollow" href="https://www.facebook.com/">
+              <img class="bigpixi-footer-social__icon" alt="Facebook" title="Facebook" src="http://simpleicons.org/icons/facebook.svg">
+</a>          </li>
+          <li class="bigpixi-footer-social__list-item">
+            <a class="bigpixi-footer__icon-link" rel="nofollow" href="https://www.youtube.com/">
+              <img class="bigpixi-footer-social__icon" alt="YouTube" title="YouTube" src="http://simpleicons.org/icons/youtube.svg">
+</a>          </li>
+          <li class="bigpixi-footer-social__list-item">
+            <a class="bigpixi-footer__icon-link" rel="nofollow" href="https://www.instagram.com/">
+              <img class="bigpixi-footer-social__icon" alt="Instagram" title="Instagram" src="http://simpleicons.org/icons/instagram.svg">
+</a>          </li>
+          <li class="bigpixi-footer-social__list-item">
+            <a class="bigpixi-footer__icon-link" rel="nofollow" href="https://www.pinterest.com/">
+              <img class="bigpixi-footer-social__icon" alt="Pinterest" title="Pinterest" src="http://simpleicons.org/icons/pinterest.svg">
+</a>          </li>
+      </ul>
+    </div>						
+													
+						</div> <!-- End Col -->
+					</div>
+				</div>
+</div>
+</div>
+
+
+
